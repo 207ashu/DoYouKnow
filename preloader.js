@@ -43,7 +43,7 @@ function loading(){
         $("#content").show();
         $("#preloader").hide();
       }
-      num+=5;
+      num+=2;
     },i*120);
   };
 
