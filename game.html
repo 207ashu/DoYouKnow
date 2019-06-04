@@ -5,7 +5,40 @@
     <title>Do You Kow?</title>
   </head>
   <body>
-      <h1 id="text">Hello</h1>
+      <div id="Sports1" >
+<h1>
+
+        <ul class="quiz">
+  <li>
+    <h4>How many letters are there in "JS"?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question0" value="A"><span>2</span></label></li>
+      <li><label><input type="radio" name="question0" value="B"><span>1</span></label></li>
+      <li><label><input type="radio" name="question0" value="C"><span>3</span></label></li>
+      <li><label><input type="radio" name="question0" value="D"><span>4</span></label></li>
+    </ul>
+  </li>
+  <li>
+    <h4>How many letters are there in "BMX"?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question1" value="A"><span>2</span></label></li>
+      <li><label><input type="radio" name="question1" value="B"><span>1</span></label></li>
+      <li><label><input type="radio" name="question1" value="C"><span>3</span></label></li>
+      <li><label><input type="radio" name="question1" value="D"><span>4</span></label></li>
+    </ul>
+  </li>
+  <li>
+    <h4>How many letters are there in "A"?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question2" value="A"><span>2</span></label></li>
+      <li><label><input type="radio" name="question2" value="B"><span>1</span></label></li>
+      <li><label><input type="radio" name="question2" value="C"><span>3</span></label></li>
+      <li><label><input type="radio" name="question2" value="D"><span>4</span></label></li>
+    </ul>
+  </li>
+</ul>
+
+      </div>
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -14,10 +47,45 @@
 
   const urlParams = new URLSearchParams(window.location.search);
   const a = urlParams.get('a');
+$("Sports1").hide();$("Sports2").hide();$("Sports3").hide();
+$("GK1").hide();$("GK2").hide();$("GK3").hide();
+$("WA1").hide();$("WA2").hide();$("WA3").hide();
+$("CS1").hide();$("CS2").hide();$("CS3").hide();
+$("Riddles1").hide();$("Riddles2").hide();$("Riddles3").hide();
 
-
-$("#text").text(""+a);
+if(a=="Sports1"){
+  $("Sports1").show();
+}else if(a=="Sports2"){
+  $("Sports2").show();
+}else if(a=="Sports3"){
+  $("Sports3").show();
+}else if(a=="GK1"){
+  $("GK1").show();
+}else if(a=="GK2"){
+  $("GK2").show();
+}else if(a=="GK3"){
+  $("GK3").show();
+}else if(a=="WA1"){
+  $("WA1").show();
+}else if(a=="WA2"){
+  $("WA2").show();
+}else if(a=="WA3"){
+  $("WA3").show();
+}else if(a=="CS1"){
+  $("CS1").show();
+}else if(a=="CS2"){
+  $("CS2").show();
+}else if(a=="CS3"){
+  $("CS3").show();
+}else if(a=="Riddles1"){
+  $("Riddles1").show();
+}else if(a=="Riddles2"){
+  $("Riddles2").show();
+}else if(a=="Riddles3"){
+  $("Riddles3").show();
+}
 
 </script>
+
 
 </html>
