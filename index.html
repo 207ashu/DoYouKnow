@@ -52,9 +52,9 @@
 
                   <div class="card-block">
 
-                      <a id="Sports1" href="game.html" class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
-                      <a id="Sports2" href="game.html" class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
-                      <a id="Sports3" href="game.html" class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
+                      <a id="Sports1"  onclick="load_game(this.id)" class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
+                      <a id="Sports2"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
+                      <a id="Sports3"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
                   </div>
                 </div>
               </div>
@@ -84,9 +84,9 @@
                 <h6 class="card-subtitle text-muted">Please Select Level</h6>
               </div>
               <div class="card-block">
-                <a id="GK1" href="game.html" class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
-                <a id="GK2"href="game.html" class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
-                <a id="GK3"href="game.html" class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
+                <a id="GK1"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
+                <a id="GK2" onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
+                <a id="GK3" onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
 
               </div>
             </div>
@@ -116,9 +116,9 @@
                   <h6 class="card-subtitle text-muted">Please Select Level</h6>
                 </div>
                 <div class="card-block">
-                  <a id="WA1" href="game.html" class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
-                  <a id="WA2" href="game.html" class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
-                  <a id="WA3" href="game.html" class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
+                  <a id="WA1"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
+                  <a id="WA2"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
+                  <a id="WA3"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
 
                 </div>
               </div>
@@ -148,9 +148,9 @@
                     <h6 class="card-subtitle text-muted">Please Select Level</h6>
                   </div>
                   <div class="card-block">
-                    <a id="CS1" href="game.html" class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
-                    <a id="CS1" href="game.html" class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
-                    <a id="CS1" href="game.html" class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
+                    <a id="CS1"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
+                    <a id="CS1"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
+                    <a id="CS1"  onclick="load_game(this.id)" class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
 
                   </div>
                 </div>
@@ -180,9 +180,9 @@
                       <h6 class="card-subtitle text-muted">Please Select Level</h6>
                     </div>
                     <div class="card-block">
-                      <a id="Riddles1" href="game.html" class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
-                      <a id="Riddles2" href="game.html" class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
-                      <a id="Riddles3" href="game.html" class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
+                      <a id="Riddles1"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:20px 20px 10px 20px" width="100%">Level 1 - Easy</a><br>
+                      <a id="Riddles2"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 10px 20px">Level 2 - Medium</a><br>
+                      <a id="Riddles3"  onclick="load_game(this.id)"  class="btn btn-primary" style="margin:10px 20px 20px 20px">Level 3 - Hard</a>
 
                     </div>
                   </div>
@@ -218,6 +218,58 @@
 
   <script>
   document.querySelector(".card-flip").classList.toggle("flip");
+  </script>
+
+  <script>
+function load_game(clicked_id){
+if(clicked_id=="Sports1"){
+  window.location.replace("game.html?a=Sports1");
+
+}else if(clicked_id=="Sports2"){
+  window.location.replace("game.html?a=Sports2");
+
+}else if(clicked_id=="Sports3"){
+  window.location.replace("game.html?a=Sports3");
+
+}else if(clicked_id=="GK1"){
+  window.location.replace("game.html?a=GK1");
+
+}else if(clicked_id=="GK2"){
+  window.location.replace("game.html?a=GK2");
+
+}else if(clicked_id=="GK3"){
+  window.location.replace("game.html?a=GK3");
+
+}else if(clicked_id=="WA1"){
+  window.location.replace("game.html?a=WA1");
+
+}else if(clicked_id=="WA2"){
+  window.location.replace("game.html?a=WA2");
+
+}else if(clicked_id=="WA3"){
+  window.location.replace("game.html?a=WA3");
+
+}else if(clicked_id=="CS1"){
+  window.location.replace("game.html?a=CS1");
+
+}else if(clicked_id=="CS2"){
+  window.location.replace("game.html?a=CS2");
+
+}else if(clicked_id=="CS3"){
+  window.location.replace("game.html?a=CS3");
+
+}else if(clicked_id=="Riddles1"){
+  window.location.replace("game.html?a=Riddles1");
+
+}else if(clicked_id=="Riddles2"){
+  window.location.replace("game.html?a=Riddles2");
+
+}else if(clicked_id=="Riddles3"){
+  window.location.replace("game.html?a=Riddles3");
+
+}
+
+}
   </script>
 
 
